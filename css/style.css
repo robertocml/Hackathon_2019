@@ -16,6 +16,9 @@ main {
   flex: 1 0 auto;
 }
    
+footer {
+  position:fixed;bottom:0;left:0;width:100%;
+}
 
 .icon-block {
   padding: 0 15px;
