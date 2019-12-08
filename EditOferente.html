@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <title>Editar oferente</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
+
 <body>
   <nav class="black" role="navigation">
     <div class="nav-wrapper container center"><img id="logo-gob" src="img/logo.png" alt="logo"></a>
 
-     
+
     </div>
   </nav>
 
@@ -22,59 +24,97 @@
 
   <div class="container">
     <div class="section">
-        <h1 class="header center">Busqueda de oferente</h1>
+      <h1 class="header center">EDITAR OFERENTE</h1>
 
-        <div class="row">
-            <form class="col s12">
-                <div class="row">
-                
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">account_circle</i>
-                      <input id="oferente" type="text" class="validate">
-                      <label for="oferente">Nombre</label>
-                    </div>
-                  </div>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
 
-              <div class="row">
-                
-                  <div class="input-field col s12">
-                    <i class="material-icons prefix">dialpad</i>
-                    <input id="id_oferente" pattern="[0-9]*" type="number" class="validate">
-                    <label for="id_oferente">ID</label>
-                  </div>
-                </div>
-            
-              
-                <br>
-                <br>
-
-                <div class="row center">
-                    <div class="col s4">
-                        <a id="btn_palomita" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">check</i></a>
-                    </div>
-    
-                    <div class="col s4">
-                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">edit</i></a>
-                    </div>
-    
-                    <div class="col s4">
-                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-                    </div>
-                </div>
-      
-              
-
-              
-            </form>
+            <div class="input-field col s12">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="oferente" type="text" class="validate" required>
+              <label for="oferente">Nombre</label>
+            </div>
           </div>
-  
-     
+
+          <div class="row">
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">home</i>
+              <input id="domicilio" type="text" class="validate">
+              <label for="domicilio">Domicilio</label>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">short_text</i>
+              <input id="concepto" type="text" class="validate">
+              <label for="concepto">Concepto</label>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">dialpad</i>
+              <input id="importe" pattern="[0-9]*" type="number" class="validate" onKeypress="sumale()"
+                onKeyUp="sumale()" >
+              <label for="importe">Importe</label>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">dialpad</i>
+              <input id="otros" pattern="[0-9]*" type="number" class="validate" onKeypress="sumale()"
+                onKeyUp="sumale()">
+              <label for="otros">Otros</label>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">attach_money</i>
+              <input id="total" pattern="[0-9]*" type="number" disabled>
+              <label for="total"></label>
+            </div>
+          </div>
+
+
+
+
+
+
+          <br>
+          <br>
+
+          <div class="row center">
+            <div class="">
+              <button id="btn_palomita" type="submit" class="btn-floating btn-large waves-effect waves-light red"><i
+                  class="material-icons">check</i></button>
+            </div>
             
+
+
+          </div>
+
+
+
+
+        </form>
+      </div>
+
+
+
     </div>
     <br><br>
   </div>
 
-  
+
 
 
   <!--  Scripts-->
@@ -82,7 +122,8 @@
   <script src="js/materialize.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="js/init.js"></script>
-  <script src="js/viewInspector.js"></script>
+  <script src="js/editOferente.js"></script>
 
-  </body>
+</body>
+
 </html>
