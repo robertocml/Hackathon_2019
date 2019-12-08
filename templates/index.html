@@ -1,0 +1,82 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Inicio de sesión.</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="black" role="navigation">
+    <div class="nav-wrapper container center"><img id="logo-gob" src="{% static 'img/logo.png' %}" alt="logo"></a>
+
+
+    </div>
+  </nav>
+
+
+
+  <div class="container">
+    <div class="section">
+      <h1 class="header center">Inicio de sesión.</h1>
+
+      <div class="row">
+        <form method="POST" class="col s12" id="login" action="{% url 'login' %}">
+          {% csrf_token %}
+          {{ form.as_p }}
+
+          <!--           <div class="row">
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Usuario</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">lock</i>
+              <input id="password" type="password" class="validate">
+              <label for="password">Contraseña</label>
+            </div>
+          </div> -->
+
+          <div class="center">
+            <button type="submit" class="waves-effect waves-light black btn">Iniciar sesión.</button>
+
+          </div>
+        </form>
+      </div>
+
+
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer black">
+
+    <div class="footer-copyright">
+      <div class="container">
+        Creado por Data Driven Democracy.</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'js/materialize.js' %}"></script>
+  <script src="{% static 'js/init.js' %}"></script>
+
+</body>
+
+</html>

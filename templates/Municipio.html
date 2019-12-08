@@ -1,0 +1,61 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Vista Inspector</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+  <style>
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="black" role="navigation">
+    <div class="nav-wrapper container center"><img id="logo-gob" src="{%static 'img/logo.png' %}" alt="logo"></a>
+
+
+    </div>
+  </nav>
+
+
+
+  <div class="container">
+    <div class="section">
+      <h1 class="header center">¿Como se mueve el mercado?</h1>
+      <div>
+        <br>
+        <img src="{%static 'img/recuadacion.png' %}" alt="" class="responsive">
+      </div>
+      <br>
+      <img src="{%static 'img/oferentesdias.png' %}" alt="" class="responsive">
+    </div>
+    <br>
+    <img src="{%static 'img/girospop.jpg' %}" alt="" class="responsive">
+  </div>
+
+  </div>
+  <br><br>
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'js/materialize.js' %}"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="{% static 'js/init.js' %}"></script>
+  <script src="{% static 'js/viewInspector.js' %}"></script>
+
+</body>
+
+</html>
