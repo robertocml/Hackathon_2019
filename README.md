@@ -1,3 +1,5 @@
+<img width="790" alt="hubbanner" src="https://user-images.githubusercontent.com/12022308/70465519-c027e000-1a86-11ea-9603-dde3ced43141.PNG">
+
 # Hackathon Escobedo 2019
 
 Aplicación web simple y minimalista para la recuaduacion de cobros en los mercados de Escobedo NL.
