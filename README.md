@@ -3,7 +3,7 @@
 Aplicación web simple y minimalista para la recuaduacion de cobros en los mercados de Escobedo NL.
 
 
-### Prerequisites
+## Prerequisites:
 
 Se requiere tener instalado python y django en su version 2.2.2
 
@@ -11,7 +11,7 @@ Se requiere tener instalado python y django en su version 2.2.2
 pip install Django==2.2.2
 ```
 
-### Installing
+## Installing:
 
 Primeramente se clona el proyecto:
 ```
@@ -33,7 +33,7 @@ y ahora puedes proceder a correr el proyecto de manera local en tu navegador con
   localhost:8000
 ```
 
-Algunas vistas del proyecto:
+## Algunas vistas del proyecto:
 
 <img width="313" alt="vista1" src="https://user-images.githubusercontent.com/12022308/70464015-acc74580-1a83-11ea-8cb0-91f5319a527f.PNG">
 
@@ -45,21 +45,21 @@ Algunas vistas del proyecto:
 
 
 
-## Built With
+## Built With:
 
 * [Django](http://www.dropwizard.io/1.0.2/docs/) - El framework usado para el Backend
 * [MaterializeCSS](https://maven.apache.org/) - El framework usado para el frontend
 * [Python](https://rometools.github.io/rome/) - Uso de python para en analisis de datos 
 
-## Contributing
+## Contributing:
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 
 ## Authors
 
-* **Roberto Pérez** - *Desarrollo backend y analisis de datos* - [Robertocml](https://github.com/PurpleBooth)
-* **Armando Aguiar** - *Desarrollo frontend* - [ArmandoAlamilla](https://github.com/PurpleBooth)
+* **Roberto Pérez** - *Desarrollo backend y analisis de datos* - [Robertocml](https://github.com/robertocml)
+* **Armando Aguiar** - *Desarrollo frontend* - [ArmandoAlamilla](https://github.com/armandoalamilla)
 * **Alfredo Sánchez** - *Analisis de datos* - [Alfredoszrz](https://github.com/alfredoszrz)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
